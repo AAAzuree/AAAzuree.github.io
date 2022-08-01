@@ -20,12 +20,14 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="不用去猜">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AAAzuree">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="AAAzuree">
+<meta property="og:description" content="不用去猜">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="AAAzuree">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/">
@@ -41,7 +43,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>AAAzuree</title>
   
 
 
@@ -92,9 +94,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">AAAzuree</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">这里是小陆的学习博客</p>
   </div>
 
   <div class="site-nav-right">
@@ -113,9 +116,24 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a>
 
   </li>
   </ul>
@@ -148,13 +166,13 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/31/%E5%B0%8F%E9%B9%BF%E4%BB%8A%E5%A4%A9%E5%AD%A6%E4%BA%86%E5%95%A5-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="AAAzuree">
+      <meta itemprop="description" content="不用去猜">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="AAAzuree">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -168,10 +186,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-07-31 22:33:01 / Modified: 22:38:18" itemprop="dateCreated datePublished" datetime="2022-07-31T22:33:01+08:00">2022-07-31</time>
+              <time title="Created: 2022-07-31 22:33:01" itemprop="dateCreated datePublished" datetime="2022-07-31T22:33:01+08:00">2022-07-31</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-08-01 21:54:58" itemprop="dateModified" datetime="2022-08-01T21:54:58+08:00">2022-08-01</time>
+              </span>
 
           
 
@@ -184,150 +208,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-Node-js"><a href="#1-Node-js" class="headerlink" title="1. Node.js"></a>1. Node.js</h2><blockquote>
-<p>作为一个异步事件驱动的 JavaScript 运行时，Node.js 被设计用来构建可扩展的网络应用。在下面的 “Hello World” 示例中，可以并发处理许多连接，每一个连接都会触发一个回调，而当没有可做的事情时，Node.js 就会进入休眠状态。</p>
-</blockquote>
-<ul>
-<li><p>异步事件</p>
-<ul>
-<li><p><strong>同步方法</strong>调用一旦开始，调用者必须等到方法调用返回后，才能继续后续的行为。</p>
-</li>
-<li><p><strong>异步方法</strong>调用更像一个消息传递，一旦开始，方法调用就会立即返回，调用者就可以继续后续的操作。而，异步方法通常会在另外一个线程中，“真实”地执行着。整个过程，不会阻碍调用者的工作。</p>
-</li>
-</ul>
-</li>
-<li><p>运行时//runtime</p>
-<ul>
-<li><p>如果讨论某门高级语言的运行时，我们通常是在讨论一个更重、更大而全的运行时库。</p>
-</li>
-<li><p>比如 Java 的运行时是 JRE，C# 的运行时是 CLR。这两者都相当于一个需要在 OS 上单独安装的软件，借助它们来解释执行相应语言的程序（编译出的<a target="_blank" rel="noopener" href="https://www.zhihu.com/search?q=%E5%AD%97%E8%8A%82%E7%A0%81&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:2133648600%7D">字节码</a>//bytecode）。</p>
-</li>
-<li><p>典型的高级语言「运行时系统」里大概需要这些基础组件：</p>
-<ul>
-<li>一个解释执行字节码的虚拟机，多半得带个垃圾回收器。</li>
-<li>如果语言是源码解释执行，那么需要一个编译器前端做词法分析和语法分析。</li>
-<li>如果运行时支持 JIT 优化，那么还得藏着个编译器后端（动态生成机器码）。</li>
-<li>IO 相关能力，比如 Node.js 的 <code>fs.readFile</code> 之类。</li>
-</ul>
-<p>可以看到相比上面 C 语言的「运行时」，这已经是个复杂的基础软件系统了。</p>
-<p>作者：doodlewind<br>链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20607178/answer/2133648600">https://www.zhihu.com/question/20607178/answer/2133648600</a><br>来源：知乎</p>
-</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>这与当今比较常见的采用操作系统线程的并发模型形成了鲜明对比。基于线程的网络效率相对较低且更难以使用。此外，由于没有锁，Node.js 的用户不用担心进程死锁的问题。Node.js 中几乎没有函数直接执行 I/O 操作（除非你使用 Node.js 标准库中的同步函数版本），其进程从不会被阻塞，因此用 Node.js 来开发可扩展系统是非常合理的。</p>
-<p>如果你对上面的描述有一些不理解地方，这里有一篇专门关于<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/docs/guides/blocking-vs-non-blocking/">阻塞对比非阻塞</a>[批注：可以一看，有助于理解同步和异步]的文章供你参考。</p>
-</blockquote>
-<ul>
-<li>这里的异步编程还得去看JavaScript的[异步教程](<a target="_blank" rel="noopener" href="https://www.cnblogs.com/gjj-jb/p/10576412.html">前端分享—-JS异步编程+ES6箭头函数 - 技术波波 - 博客园 (cnblogs.com)</a>)，回调函数什么的概念还不是很清晰。</li>
-<li><em>顺带了解了一下Linux&amp;&amp;Docker</em></li>
-</ul>
-<blockquote>
-<p>Node.js 在设计上类似于 Ruby 的 <a target="_blank" rel="noopener" href="https://github.com/eventmachine/eventmachine">Event Machine</a> 或 Python 的 <a target="_blank" rel="noopener" href="https://twistedmatrix.com/trac/">Twisted</a> 之类的系统。但 Node.js 更深入地考虑了事件模型，它将<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/">事件循环</a>作为一个运行时结构而不是作为一个库来呈现。在其他系统中，总是有一个阻塞调用来启动事件循环。通常情况下，要执行的行为是通过脚本开始时的回调来定义的，然后通过 <code>EventMachine::run()</code> 这样的阻塞调用来启动服务器。而在 Node.js 中，没有这种启动事件循环的调用。Node.js 在执行输入脚本后直接进入事件循环，当没有更多的回调要执行时，Node.js 就会退出事件循环。这种行为就像浏览器的 JavaScript 一样 —— 事件循环对用户是隐藏的。</p>
-<p>HTTP 是 Node.js 中的一等公民，设计时考虑到了流式和低延迟，这使得 Node.js 非常适合作为网络库或框架的基础。</p>
-<p>Node.js 被设计成单线程运行，但这并不意味着你无法利用到 CPU 的多个核心。你可以通过 <a target="_blank" rel="noopener" href="https://nodejs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options"><code>child_process.fork()</code></a> API 来生成子进程，并且它被设计成非常易于通信。而建立在同一个接口之上的 <a target="_blank" rel="noopener" href="https://nodejs.org/api/cluster.html"><code>cluster</code></a> 模块允许你在进程之间共享套接字（sockets），以实现核心的负载均衡。</p>
-</blockquote>
-<ul>
-<li><input disabled="" type="checkbox"> 这一段里面有太多的东西可以挖掘了，但是我还没到这个知识水平。<strong>留个坑</strong></li>
-</ul>
-<p>总结一下，Node.js的本质是个异步事件驱动的 JavaScript 运行时。That’s ALL！</p>
-<h2 id="2-玩转git"><a href="#2-玩转git" class="headerlink" title="2. 玩转git"></a>2. 玩转git</h2><blockquote>
-<p>Git是一个版本控制系统（Version Control System, VCS）。版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。有了版本控制系统，就可以不用担心文件丢失，不小心误修改文件等等“事故”，而且你可以随便回到历史记录的某个时刻。</p>
-<p><strong>Git是版本控制系统，Github是在线的基于Git的代码托管服务</strong>。</p>
-</blockquote>
-<ul>
-<li><p>下载并且安装git的过程中——</p>
-<ul>
-<li><p>Git Bash是什么？</p>
-<blockquote>
-<p>Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.</p>
-</blockquote>
-<p>Why Git Bash?</p>
-<blockquote>
-<p>In Windows environments, Git is often packaged as part of higher level GUI applications. <strong>GUIs for Git may attempt to abstract and hide the underlying version control system primitives.</strong> This can be a great aid for Git beginners to rapidly contribute to a project. Once a project’s collaboration requirements grow with other team members, it is critical to be aware of how the actual raw Git methods work. <strong>This is when it can be beneficial to drop a GUI version for the command line tools. Git Bash is offered to provide a terminal Git experience.</strong></p>
-</blockquote>
-</li>
-<li><p>SSH是什么</p>
-<p><em>对不起又看到计网去了，不过既然看了就索性看一下吧</em></p>
-<ul>
-<li><p><strong>Secure Shell</strong>（安全外壳协议Secure SHell，简称<strong>SSH</strong>）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。</p>
-</li>
-<li><p>在客户端来看，SSH提供两种级别的安全验证。</p>
-<ul>
-<li>第一种级别（基于密码的安全验证），知道帐号和密码，就可以登录到远程主机，并且所有传输的数据都会被SSH传输层协议加密。但是，可能会有别的服务器在冒充真正的服务器，但只要客户端校验主机公钥，在服务器私钥不泄露的前提下就能避免被“中间人”攻击。</li>
-<li>第二种级别（基于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5%E5%8A%A0%E5%AF%86">密钥</a>的安全验证），需要依靠密钥，也就是你必须为自己创建一对密钥，并把公钥放在需要访问的服务器上。客户端软件会向服务器发出请求，请求用你的私钥进行安全验证并发送使用私钥对会话ID等信息的签名。服务器收到请求之后，先在你在该服务器的用户根目录下寻找你的公钥，然后把它和你发送过来的公钥进行比较，并用公钥检验签名是否正确。如果两个密钥一致，且签名正确，服务器就认为用户登录成功。</li>
-</ul>
-<p>在服务器端来看，SSH也提供安全验证。</p>
-<ul>
-<li>服务器将自己的公钥分发给相关的客户端，并将密钥交换过程中的公开信息与协商密钥的哈希值的签名发送给客户端，客户端将获取的服务器公钥计算指纹并与其他安全信道获得的公钥指纹相比对并验证主机签名。</li>
-<li>存在一个密钥认证中心，所有提供服务的主机都将自己的公钥提交给认证中心，公钥认证中心给服务端颁发证书，而任何作为客户端的主机则只要保存一份认证中心的公钥就可以了。在这种模式下，服务器会发送认证中心提供给主机的证书与主机对密钥交换过程中公开信息的签名。客户端只需要验证证书的有效性并验证签名。</li>
-</ul>
-</li>
-<li><p>SSH到钟佬的服务器上去了，好</p>
-</li>
-<li><p>有个和它长得很像的东西叫做TLS/SSL</p>
-<p><strong>传输层安全性协议</strong>（英语：<strong>T</strong>ransport <strong>L</strong>ayer <strong>S</strong>ecurity，缩写：<strong>TLS</strong>）及其前身<strong>安全套接层</strong>（英语：<strong>S</strong>ecure <strong>S</strong>ockets <strong>L</strong>ayer，缩写：<strong>SSL</strong>）是一种<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE">安全协议</a>，目的是为<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%9A%9B%E7%B6%B2%E8%B7%AF">互联网</a>通信提供安全及数据<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%AE%8C%E6%95%B4%E6%80%A7">完整性</a>保障。</p>
-<p>SSL包含记录层（Record Layer）和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82">传输层</a>，记录层协议确定传输层数据的封装格式。传输层安全协议使用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/X.509">X.509</a>认证，之后利用非对称加密演算来对通信方做身份认证，之后交换对称密钥作为会谈密钥（<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Session_key">Session key</a>）。这个会谈密钥是用来将通信两方交换的资料做加密，保证两个应用间通信的保密性和可靠性，使客户与服务器应用之间的通信不被攻击者窃听。</p>
-</li>
-<li><p><strong>中间人攻击</strong>（英语：<strong>M</strong>an-<strong>i</strong>n-<strong>t</strong>he-<strong>m</strong>iddle attack，缩写：<strong>MITM</strong>）:牛头人（x</p>
-</li>
-</ul>
-</li>
-<li><p>证书是什么是干嘛的</p>
-<ul>
-<li><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%95%B8%E4%BD%8D%E7%B0%BD%E7%AB%A0">数字签名 - 维基百科，自由的百科全书 (wikipedia.org)</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0%E8%AA%8D%E8%AD%89">公开密钥认证 - 维基百科，自由的百科全书 (wikipedia.org)</a>//具体信息见下</p>
-</li>
-<li><p>钟佬的电脑被我的电脑质疑了.jpg</p>
-<p><em>册那怎么就聊到建站和证书问题上去了诶怎么就过了一天了总结一下昨天的问题有这么几个</em></p>
-<ul>
-<li><p>证书是干嘛的，谁发的，咋验证啊</p>
-<p>数字证书又叫公开密钥认证，此文件包含了公钥信息、拥有者身份信息（主体）、以及<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6%E8%AE%A4%E8%AF%81%E6%9C%BA%E6%9E%84">数字证书认证机构</a>（发行者）对这份文件的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%95%B8%E4%BD%8D%E7%B0%BD%E7%AB%A0">数字签名</a>，以保证这个文件的整体内容<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%AE%8C%E6%95%B4%E6%80%A7">正确无误</a>。拥有者凭着此文件，可向电脑系统或其他用户<em><strong>表明身份，从而对方获得信任并授权访问或使用某些敏感的电脑服务</strong></em>。电脑系统或其他用户可以透过一定的<em><strong>程序核实</strong></em> [就是像钟佬说的那样，往哪里放一个文件]证书上的内容，包括证书有否过期、数字签名是否有效，如果你<em><strong>信任</strong></em> [有一个信任链的]签发的机构，就可以信任证书上的密钥，凭公钥加密与拥有者进行<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BF%9D%E5%AF%86%E6%80%A7">可靠</a>的通信。</p>
-<p>简而言之，认证机构用自己的私钥对需要认证的人（或组织机构）的公钥施加数字签名并生成证书，即证书的本质就是对公钥施加数字签名。</p>
-<ul>
-<li><p>公钥私钥</p>
-<p>这里涉及到了现代密码学，再step in就go too far了，有空再研究。<a target="_blank" rel="noopener" href="https://blog.csdn.net/lady_killer9/article/details/117395452">现代密码学-密码学概论与基本知识_lady_killer9的博客-CSDN博客_现代密码学</a></p>
-</li>
-</ul>
-</li>
-<li><p>什么叫验证啊，Let’s encrypt是怎么实现的啊</p>
-<p>详见<a target="_blank" rel="noopener" href="https://letsencrypt.org/zh-cn/docs/">文档 - Let’s Encrypt - 免费的SSL/TLS证书 (letsencrypt.org)</a></p>
-<p><del>哎，得学计算机网络了，什么shell TCP/IP 什么DDDos都不懂的，看了个寂寞</del></p>
-<p>诶真好还有科普文档<a target="_blank" rel="noopener" href="https://letsencrypt.org/zh-cn/how-it-works/">Let’s Encrypt 的运作方式 - Let’s Encrypt - 免费的SSL/TLS证书 (letsencrypt.org)</a></p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><em>算了太多了看不过来了还是先傻瓜式和教程走一遍吧</em></p>
-</li>
-</ul>
-<h2 id="3-npm是干嘛的"><a href="#3-npm是干嘛的" class="headerlink" title="3.npm是干嘛的"></a>3.npm是干嘛的</h2><blockquote>
-<p><strong>npm</strong>（全称 Node Package Manager，即“node包管理器”）是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Node.js">Node.js</a>默认的、用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/JavaScript">JavaScript</a>编写的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%BB%9F%E9%AB%94%E5%A5%97%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%B5%B1">软件包管理系统</a>。</p>
-</blockquote>
-<p>好像没有装成功，怎么会事呢</p>
-<h2 id="4-hexo"><a href="#4-hexo" class="headerlink" title="4. hexo"></a>4. hexo</h2><p><em>先跟着教程用这个吧，之后想改再用别的</em></p>
-<h2 id="5-好可以开始了"><a href="#5-好可以开始了" class="headerlink" title="5. 好可以开始了"></a>5. 好可以开始了</h2><ul>
-<li><p>出师未捷身先死，nodejs不来事</p>
-<p>具体表现为 <code> npm -v</code> 的时候老是报错。安装hexo的时候也是，虽然最后在卸载的时候发现hexo其实是安装成功了的））</p>
-<p>修改npm的Windows命令脚本不能，遂remake</p>
-</li>
-<li><p>蓦然回首，突然发现，要用Git bash（好像不用也可以？</p>
-<p>remake果然成功了qaq</p>
-</li>
-<li><p>成功了！咳咳这个是最后结果，接下来让我总结一下过程</p>
-<ul>
-<li>remake，npm老是不行还被我改了文件，果断remake</li>
-<li>git bash用的是*nix的语法，Windows的cmd和powershell和它语法不一样，多学学前者</li>
-<li>部署到远端去有人说要SSH什么的，但是我好像并没有用到？</li>
-<li>在git bash上登了一下自己的账号，然后再进行push的，这几步异常的顺利，感谢钟佬爱情赞助的梯子</li>
-</ul>
-</li>
-</ul>
-
+          <p>虽然钟佬给我用wordpress搭了个博客but我想自己搞一个。在此特别鸣谢钟佬免费给我压榨教我计算机网络、Git、Vim和爱情赞助的域名和梯子，Orz</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/07/31/%E5%B0%8F%E9%B9%BF%E4%BB%8A%E5%A4%A9%E5%AD%A6%E4%BA%86%E5%95%A5-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -349,13 +238,13 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/31/This-is-an-Attempt/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="AAAzuree">
+      <meta itemprop="description" content="不用去猜">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="AAAzuree">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -415,13 +304,13 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/31/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="AAAzuree">
+      <meta itemprop="description" content="不用去猜">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="AAAzuree">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -435,10 +324,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-07-31 15:12:35 / Modified: 14:52:42" itemprop="dateCreated datePublished" datetime="2022-07-31T15:12:35+08:00">2022-07-31</time>
+              <time title="Created: 2022-07-31 15:12:35" itemprop="dateCreated datePublished" datetime="2022-07-31T15:12:35+08:00">2022-07-31</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-08-01 23:57:00" itemprop="dateModified" datetime="2022-08-01T23:57:00+08:00">2022-08-01</time>
+              </span>
 
           
 
@@ -452,19 +347,14 @@
 
       
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/07/31/hello-world/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -537,8 +427,10 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
+    <img class="site-author-image" itemprop="image" alt="AAAzuree"
+      src="/uploads/avatar.jpg">
+  <p class="site-author-name" itemprop="name">AAAzuree</p>
+  <div class="site-description" itemprop="description">不用去猜</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -577,7 +469,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">AAAzuree</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
